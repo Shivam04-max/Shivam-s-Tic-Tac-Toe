@@ -1,0 +1,760 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.navigation {
+    height: 2rem;
+    background-color: rgb(1, 1, 67);
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 7vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.img-con {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.res-img {
+    width: 100%;
+    display: block;
+    height: auto;
+    mix-blend-mode: darken;
+}
+
+.over-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#turn {
+    color: white;
+    font-size: 40px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.Hide {
+    display: none;
+}
+
+.hd {
+    font-size: 5rem;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(97, 97, 97);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.Social {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.instag {
+    height: 50px;
+    width: 50px;
+    background-image: url("insta-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.github {
+    height: 50px;
+    width: 50px;
+    background-image: url("githublogo-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.linkedIn {
+    height: 50px;
+    width: 50px;
+    background-image: url("linkedIn-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.whatsApp {
+    height: 50px;
+    width: 50px;
+    background-image: url("whatsapp-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navigation {
+        height: 2rem;
+        background-color: rgb(1, 1, 67);
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+    }
+
+    .msg-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img-con {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .res-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        mix-blend-mode: darken;
+    }
+
+    .over-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #msg {
+        color: #ffffc7;
+        font-size: 10vmin;
+    }
+
+    #new-btn {
+        padding: 1rem;
+        font-size: 2rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        margin-bottom: 5rem;
+    }
+
+    .main {
+        height: 82vh;
+    }
+
+    .hd {
+        margin-top: 10px;
+        font-size: 5rem;
+        color: chartreuse;
+    }
+
+    .container {
+        height: 49vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reset-btn {
+        padding: 1rem;
+        font-size: 1.25rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .game {
+        height: 50vmin;
+        width: 50vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        font-size: 8vmin;
+        color: #b0413e;
+        background-color: #ffffc7;
+    }
+
+    #turn {
+        color: white;
+        font-size: 40px;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .Hide {
+        display: none;
+    }
+
+    footer {
+        background-color: #ffffff;
+        color: rgb(97, 97, 97);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .Social {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .instag {
+        height: 40px;
+        width: 40px;
+        background-image: url("insta-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .github {
+        height: 40px;
+        width: 40px;
+        background-image: url("githublogo-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .linkedIn {
+        height: 40px;
+        width: 40px;
+        background-image: url("linkedIn-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .whatsApp {
+        height: 40px;
+        width: 40px;
+        background-image: url("whatsapp-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        height: 2rem;
+        background-color: rgb(1, 1, 67);
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+    }
+
+    .container {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .msg-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img-con {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .res-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        mix-blend-mode: darken;
+    }
+
+    .over-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #msg {
+        color: #ffffc7;
+        font-size: 10vmin;
+    }
+
+    #new-btn {
+        padding: 1rem;
+        font-size: 2rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        margin-bottom: 5rem;
+    }
+
+    .main {
+        height: 88vh;
+    }
+
+    .hd {
+        margin-top: 10px;
+        font-size: 5rem;
+        color: chartreuse;
+    }
+
+    .container {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reset-btn {
+        padding: 1rem;
+        font-size: 1.25rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .game {
+        height: 50vmin;
+        width: 50vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        height: 15vmin;
+        width: 15vmin;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        font-size: 8vmin;
+        color: #b0413e;
+        background-color: #ffffc7;
+    }
+
+    #turn {
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .Hide {
+        display: none;
+    }
+
+    footer {
+        background-color: #ffffff;
+        color: rgb(97, 97, 97);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .Social {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .instag {
+        height: 60px;
+        width: 60px;
+        background-image: url("insta-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .github {
+        height: 60px;
+        width: 60px;
+        background-image: url("githublogo-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .linkedIn {
+        height: 60px;
+        width: 60px;
+        background-image: url("linkedIn-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .whatsApp {
+        height: 60px;
+        width: 60px;
+        background-image: url("whatsapp-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        height: 2rem;
+        background-color: rgb(1, 1, 67);
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+    }
+
+    .msg-container {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img-con {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .res-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        mix-blend-mode: darken;
+    }
+
+    .over-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #msg {
+        color: #ffffc7;
+        font-size: 10vmin;
+    }
+
+    #new-btn {
+        padding: 1rem;
+        font-size: 1.25rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    .main {
+        height: 81vh;
+    }
+
+    .hd {
+        margin-top: 10px;
+        font-size: 3rem;
+        color: chartreuse;
+    }
+
+    .container {
+        height: 56vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reset-btn {
+        padding: 1rem;
+        font-size: 1.25rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .game {
+        height: 70vmin;
+        width: 70vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        font-size: 8vmin;
+        color: #b0413e;
+        background-color: #ffffc7;
+    }
+
+    #turn {
+        color: white;
+        font-size: 2rem;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .Hide {
+        display: none;
+    }
+
+    footer {
+        background-color: #ffffff;
+        color: rgb(97, 97, 97);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .Social {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .instag {
+        height: 50px;
+        width: 50px;
+        background-image: url("insta-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .github {
+        height: 50px;
+        width: 50px;
+        background-image: url("githublogo-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .linkedIn {
+        height: 50px;
+        width: 50px;
+        background-image: url("linkedIn-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .whatsApp {
+        height: 50px;
+        width: 50px;
+        background-image: url("whatsapp-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+}
